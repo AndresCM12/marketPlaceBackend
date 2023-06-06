@@ -1,0 +1,31 @@
+//Create offer
+###
+POST http://localhost:3000/api/offers HTTP/1.1
+Content-Type: application/json
+
+    {
+    "description": "Iphone 11 Pro Max 256GB Space Gray, its new, never used, with all accessories and box", 
+    "name": "IPhone 11 Pro Max",
+    "price": 500,
+    "category": "Electronics",
+    "userName": "Pancho P",
+    "userId": "647e0cf563b62ad2a3724f92"
+    }
+
+//Get offers by category
+###
+POST http://localhost:3000/api/getAllOffers HTTP/1.1
+Content-Type: application/json
+
+    {
+    "category": "Electronics"
+    }
+
+//get offers by user
+###
+POST http://localhost:3000/api/offers/user HTTP/1.1
+Content-Type: application/json
+
+    {
+    "userId": "647e0cf563b62ad2a3724f92"
+    }

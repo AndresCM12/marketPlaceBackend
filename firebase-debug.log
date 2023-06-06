@@ -1,0 +1,39 @@
+[debug] [2023-06-06T15:23:22.443Z] ----------------------------------------------------------------------
+[debug] [2023-06-06T15:23:22.445Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Andres\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2023-06-06T15:23:22.445Z] CLI Version:   12.3.0
+[debug] [2023-06-06T15:23:22.446Z] Platform:      win32
+[debug] [2023-06-06T15:23:22.446Z] Node Version:  v16.16.0
+[debug] [2023-06-06T15:23:22.446Z] Time:          Tue Jun 06 2023 09:23:22 GMT-0600 (Central Standard Time)
+[debug] [2023-06-06T15:23:22.447Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-06T15:23:22.513Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-06T15:23:22.513Z] > authorizing via signed-in user (aanresmark2@gmail.com)
+[debug] [2023-06-06T15:23:22.513Z] [iam] checking project marketplaceproject-iv for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2023-06-06T15:23:22.515Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/marketplaceproject-iv:testIamPermissions [none]
+[debug] [2023-06-06T15:23:22.516Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/marketplaceproject-iv:testIamPermissions x-goog-quota-user=projects/marketplaceproject-iv
+[debug] [2023-06-06T15:23:22.516Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/marketplaceproject-iv:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2023-06-06T15:23:22.930Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/marketplaceproject-iv:testIamPermissions 200
+[debug] [2023-06-06T15:23:22.930Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/marketplaceproject-iv:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2023-06-06T15:23:22.930Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/marketplaceproject-iv/serviceAccounts/marketplaceproject-iv@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2023-06-06T15:23:22.930Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/marketplaceproject-iv/serviceAccounts/marketplaceproject-iv@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2023-06-06T15:23:23.347Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/marketplaceproject-iv/serviceAccounts/marketplaceproject-iv@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2023-06-06T15:23:23.347Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/marketplaceproject-iv/serviceAccounts/marketplaceproject-iv@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'marketplaceproject-iv'...
+[info] 
+[info] i  deploying functions 
+[debug] [2023-06-06T15:23:23.350Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/marketplaceproject-iv [none]
+[debug] [2023-06-06T15:23:23.782Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/marketplaceproject-iv 200
+[debug] [2023-06-06T15:23:23.783Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/marketplaceproject-iv {"projectId":"marketplaceproject-iv","projectNumber":"331293570334","displayName":"marketplaceproject-iv","name":"projects/marketplaceproject-iv","resources":{"hostingSite":"marketplaceproject-iv"},"state":"ACTIVE","etag":"1_cebb65d2-3e23-4491-b8ff-fbfa31c7b283"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2023-06-06T15:23:23.784Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/marketplaceproject-iv/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-06-06T15:23:23.784Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/marketplaceproject-iv/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/marketplaceproject-iv
+[debug] [2023-06-06T15:23:23.785Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/marketplaceproject-iv/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-06-06T15:23:23.785Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/marketplaceproject-iv/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/marketplaceproject-iv
+[debug] [2023-06-06T15:23:23.786Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/marketplaceproject-iv/services/cloudbuild.googleapis.com [none]
+[debug] [2023-06-06T15:23:23.786Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/marketplaceproject-iv/services/cloudbuild.googleapis.com x-goog-quota-user=projects/marketplaceproject-iv
+[debug] [2023-06-06T15:23:23.786Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/marketplaceproject-iv/services/artifactregistry.googleapis.com [none]
+[debug] [2023-06-06T15:23:23.786Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/marketplaceproject-iv/services/artifactregistry.googleapis.com x-goog-quota-user=projects/marketplaceproject-iv

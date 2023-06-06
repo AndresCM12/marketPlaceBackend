@@ -1,0 +1,36 @@
+//Create user
+###
+POST http://localhost:3000/api/signUp/User HTTP/1.1
+Content-Type: application/json
+
+    {
+    "name": "John Doe",
+    "email": "johndoe@gmail.com",
+    "password": "123456",
+    "phone": "1234567890"
+    }
+
+//LogIn User
+###
+POST http://localhost:3000/api/logIn/User HTTP/1.1
+Content-Type: application/json
+
+    {
+    "email": "prueba@gmail.com",
+    "password": "123456"
+    }
+
+//Change name, password and phone    
+###
+PUT http://localhost:3000/api/user HTTP/1.1
+Content-Type: application/json
+
+    {
+    "id": "647e0cf563b62ad2a3724f92",
+    "name": "Andres",
+    "password": "123456789",
+    "phone": "52614958128"
+    }
+    
+###
+GET http://localhost:3000/ HTTP/1.1
